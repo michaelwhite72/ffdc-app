@@ -14,6 +14,9 @@ app.use(history());
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../../dist/index.html'));
 })
+
+
+
 app.listen(process.env.PORT || 8000, () => {
     console.log(`Server is listening on port ${process.env.PORT}`);
 });
