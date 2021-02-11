@@ -23,12 +23,22 @@ npm install
 Set ```.env``` file
 
 ```bash
-PORT=8000
+# Required
 CLIENT_ID=MyClient_ID
 CLIENT_SECRET=MyClient_Secret
-API_URL=
-AUTH_URL=
-TOKEN_URL=
+SESSION_SECRET=12345
+
+# Useful
+FFDC_URL=https://api.fusionfabric.cloud
+AUTHORIZATION_WELLKNOWN=https://api.fusionfabric.cloud/login/v1/sandbox/.well-known/openid-configuration
+TENANT=sandbox
+LOGOUT_URL=https://login.microsoftonline.com/finastra.onmicrosoft.com/oauth2/v2.0/logout
+PORT=8000
+TIMEOUT=6000
+ROOT_URL=http://localhost:8000
+HOST=http://www.site.web
+WEBSITE_HOSTNAME=www.site.web
+LOGIN_URL=http://localhost:8000/login
 ```
 
 ## Compile project
